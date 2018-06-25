@@ -1,0 +1,296 @@
+*{margin: 0; padding: 0;}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav .logo {
+    background: black;
+    color: white;
+    flex: 2;
+    font-size: 3em;
+    padding: 6px;
+    text-transform: uppercase;
+    text-indent: 5px;
+    text-indent: 15px;
+    
+}
+
+.nav .menu {
+    flex: 5;
+    display: flex;
+    text-align: center;
+}
+
+.nav .menu ul {
+    flex: 1;
+    display: flex;
+    background: white;
+}
+
+.nav .menu ul li {
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.nav .menu ul li a {
+    flex-basis: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    border-left: 1px solid #3c3a3a;
+    text-transform: uppercase;
+}
+
+.nav .menu ul li a:hover {
+    background: #343333;
+}
+
+
+.nav .menu ul li a span {
+    display: block;
+    width: 100%;
+}
+
+
+.banner {
+    background: url("foto1.jpg"); 
+    width: 100%;
+    background-size: cover;
+}
+
+.bannerText {
+    display: flex;
+    padding: 15% 0;
+}
+
+.bannerTextItem {
+    color: #817979;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgba(255, 255, 255, 0.50); 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+}
+
+.bannerTextItem h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 7.5em;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px #fff;
+
+}
+
+.bannerTextItem p {
+    font-size: 3.5em;
+    color: #000000;
+    text-shadow: 1px 2px 3px #fff;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 0;
+}
+
+.text1 h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.container .text1 {
+    flex: 1;
+    padding: 1%;
+    text-align: center;
+}
+
+.container .text1 p {
+    font-size: 1.5em;
+}
+
+.contact-items {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-items h2 {
+    font-size: 2em;
+
+}
+
+.contact-items input[type="text"]{
+    font-family: 'Amatic SC', cursive;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 60%;
+    outline: none;
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+input:placeholder {
+    color: red;
+}
+
+.contact-items textarea {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 60%;
+    outline: none;
+    font-family: 'Amatic SC', cursive;
+    color: red;
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+
+
+.contact-items a {
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin: 0;
+    padding: 15px;
+    outline: none;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 60%;
+    margin-bottom: 50px;
+    display: block;
+    border: 1px solid #9b9a9a; 
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-items h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input:-moz-placeholder {
+    color: #000000;
+}
+
+input::-moz-placeholder {
+    color: #000000;
+}
+
+input:-ms-input-placeholder {
+    color: #000000;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #000000;
+}
+
+@media all and (max-width: 660px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav .logo {
+        padding: 15px;
+        font-size: 2.5em;
+        border-bottom: 1px white solid;
+    }
+    
+    .menu ul {
+        
+        background: black;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu ul li {
+        width: 100%;
+        background: black;
+    }
+    
+    .menu ul li a {
+        padding: 5px;
+        display: block;
+    }
+    
+    .menu ul li a span {
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    .bannerTextItem h1 {
+        font-size: 6em;
+}
+
+    .bannerTextItem p {
+        font-size: 3em;
+        color: white;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 0 35px 0 35px;
+}
+    .contact-items textarea {
+        width: 90%;
+    }
+
+    .contact-items input[type="text"]{
+        width: 90%;
+}
+    .contact-items a {
+        width: 90%;
+}
+
+
+}
+
+@media all and (max-width: 500px) {
+    .bannerTextItem h1 {
+        font-size: 3.5em;
+}
+
+    .bannerTextItem p {
+        font-size: 2em;
+        color: white;
+    }
+}
+
